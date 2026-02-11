@@ -36,3 +36,29 @@ p.intro::first-letter {
     color: red;
     font-style: italic;
 }
+
+.click-me {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.click-me:focus {
+    background-color: orange;
+    transform: scale(1.1);
+}
+
+.click-me::before {
+    content: "Кликни";
+    color: white;
+}
+
+.click-me:focus::before {
+    content: "Готово!";
+}
