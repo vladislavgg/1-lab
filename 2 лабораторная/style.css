@@ -24,3 +24,15 @@ a.my-link:active {
     color: green;
     font-size: 20px;
 }
+
+p.intro::first-letter {
+    font-size: 200%;
+    color: red;
+    font-weight: bold;
+}
+
+.marker::after {
+    content: " Зимбабве";
+    color: red;
+    font-style: italic;
+}
